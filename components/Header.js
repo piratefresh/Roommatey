@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   background: #fff;
-  width: 100vw;
+  width: 100%;
+  overflow: hidden;
   height: 10vh;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 2px solid ${props => props.theme.backgroundgrey};
   display: flex;
   justify-content: center;
   h1 {

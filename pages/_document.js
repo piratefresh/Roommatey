@@ -1,8 +1,8 @@
-import Document, {Head, Main, NextScript} from "next/document";
-import {ServerStyleSheet} from "styled-components";
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
-  static getInitialProps({renderPage}) {
+  static getInitialProps({ renderPage }) {
     // Step 1: Create an instance of ServerStyleSheet
     const sheet = new ServerStyleSheet();
     // Step 2: Retrieve styles from components in the page
@@ -12,14 +12,17 @@ export default class MyDocument extends Document {
     // Step 3: Extract the styles as <style> tags
     const styleTags = sheet.getStyleElement();
     // Step 4: Pass styleTags as a prop
-    return {...page, styleTags};
+    return { ...page, styleTags };
   }
 
   render() {
     return (
       <html>
-        <Head>{this.props.styleTags}</Head>
-        <body style={{margin: 0}}>
+        <Head>
+          {this.props.styleTags}
+          <link rel="stylesheet" href="https://use.typekit.net/xhq3ibe.css" />
+        </Head>
+        <body style={{ margin: 0 }}>
           <Main />
           <NextScript />
         </body>

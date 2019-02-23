@@ -2053,7 +2053,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\magnusdev\\Documents\\webstuff\\Roommatey\\front-end\\pages\\_document.js";
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\pages\\_document.js";
 
 
 
@@ -2084,25 +2084,33 @@ function (_Document) {
           lineNumber: 21
         },
         __self: this
-      }, this.props.styleTags), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("body", {
-        style: {
-          margin: 0
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["Main"], {
+      }, this.props.styleTags, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://use.typekit.net/xhq3ibe.css",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         },
         __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("body", {
+        style: {
+          margin: 0
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["Main"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 27
         },
         __self: this
       })));

@@ -10,14 +10,18 @@ const TextBox = styled.div`
   border-radius: 5px;
   padding: 5% 2%;
   width: 90vw;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 5%;
   img {
     grid-column: profileImage;
     border-radius: 10%;
   }
+  p {
+    margin-right: 5px;
+  }
   span {
-    color: #f0b429;
+    font-size: 1rem;
+    color: ${props => props.theme.yellow};
   }
 `;
 

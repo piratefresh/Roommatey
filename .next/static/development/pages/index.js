@@ -1,5 +1,56 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
+/***/ "./components/CalenderIcon.js":
+/*!************************************!*\
+  !*** ./components/CalenderIcon.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\CalenderIcon.js";
+
+
+
+function CalenderIcon(_ref) {
+  var className = _ref.className,
+      fill = _ref.fill;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    viewBox: "0 0 24 24",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: fill,
+    d: "M9 10H7v2h2v-2m4 0h-2v2h2v-2m4 0h-2v2h2v-2m2-7h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V8h14v11z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }));
+}
+
+CalenderIcon.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+CalenderIcon.defaultProps = {
+  className: undefined,
+  fill: "rgba(0, 0, 0, 0.35)"
+};
+/* harmony default export */ __webpack_exports__["default"] = (CalenderIcon);
+
+/***/ }),
+
 /***/ "./components/DateText.js":
 /*!********************************!*\
   !*** ./components/DateText.js ***!
@@ -35,14 +86,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "C:\\Users\\magnusdev\\Documents\\webstuff\\Roommatey\\front-end\\components\\Header.js";
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\Header.js";
 
 
 
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Header__HeaderContainer",
   componentId: "sc-1cndaf5-0"
-})(["background:#fff;width:100vw;height:10vh;border-bottom:1px solid #d8d8d8;display:flex;justify-content:center;h1{color:", ";margin:0;padding:0;}"], function (props) {
+})(["background:#fff;width:100%;overflow:hidden;height:10vh;border-bottom:2px solid ", ";display:flex;justify-content:center;h1{color:", ";margin:0;padding:0;}"], function (props) {
+  return props.theme.backgroundgrey;
+}, function (props) {
   return props.theme.yellow;
 });
 
@@ -50,19 +103,125 @@ var Header = function Header(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, props.headertitle));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/ShoppingIcon.js":
+/*!************************************!*\
+  !*** ./components/ShoppingIcon.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\ShoppingIcon.js";
+
+
+
+function ShoppingIcon(_ref) {
+  var className = _ref.className,
+      fill = _ref.fill,
+      height = _ref.height,
+      width = _ref.width;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    viewBox: "0 0 24 24",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: fill,
+    d: "M3 5h6v6H3V5m2 2v2h2V7H5m6 0h10v2H11V7m0 8h10v2H11v-2m-6 5l-3.5-3.5 1.41-1.41L5 17.17l4.59-4.58L11 14l-6 6z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }));
+}
+
+ShoppingIcon.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+ShoppingIcon.defaultProps = {
+  className: undefined,
+  fill: "rgba(0, 0, 0, 0.35)"
+};
+/* harmony default export */ __webpack_exports__["default"] = (ShoppingIcon);
+
+/***/ }),
+
+/***/ "./components/TaskIcon.js":
+/*!********************************!*\
+  !*** ./components/TaskIcon.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\TaskIcon.js";
+
+
+
+function TaskIcon(_ref) {
+  var className = _ref.className,
+      fill = _ref.fill,
+      height = _ref.height,
+      width = _ref.width;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    viewBox: "0 0 24 24",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: fill,
+    d: "M3 3h6v4H3V3m12 7h6v4h-6v-4m0 7h6v4h-6v-4m-2-4H7v5h6v2H5V9h2v2h6v2z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }));
+}
+
+TaskIcon.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+TaskIcon.defaultProps = {
+  className: undefined,
+  fill: "rgba(0, 0, 0, 0.35)"
+};
+/* harmony default export */ __webpack_exports__["default"] = (TaskIcon);
 
 /***/ }),
 
@@ -80,8 +239,10 @@ __webpack_require__.r(__webpack_exports__);
 var TextBox = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "TextBox",
   componentId: "sc-1f1pr5y-0"
-})(["position:relative;display:grid;grid-template-columns:[profileImage]1fr [task]3fr [metadata]1fr;align-items:center;background:#fff;box-shadow:", ";border-radius:5px;padding:5% 2%;width:90vw;font-size:1.2rem;margin-bottom:5%;img{grid-column:profileImage;border-radius:10%;}span{color:#f0b429;}"], function (props) {
+})(["position:relative;display:grid;grid-template-columns:[profileImage]1fr [task]3fr [metadata]1fr;align-items:center;background:#fff;box-shadow:", ";border-radius:5px;padding:5% 2%;width:90vw;font-size:1.4rem;margin-bottom:5%;img{grid-column:profileImage;border-radius:10%;}p{margin-right:5px;}span{font-size:1rem;color:", ";}"], function (props) {
   return props.theme.bs;
+}, function (props) {
+  return props.theme.yellow;
 });
 /* harmony default export */ __webpack_exports__["default"] = (TextBox);
 
@@ -6653,10 +6814,10 @@ exports.loadGetInitialProps = loadGetInitialProps;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cmagnusdev%5CDocuments%5Cwebstuff%5CRoommatey%5Cfront-end%5Cpages%5Cindex.js!./":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cmagnusdev%5CDocuments%5Cwebstuff%5CRoommatey%5Cfront-end%5Cpages%5Cindex.js ***!
-  \*******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CMagnus%5CDocuments%5Cwebstuff%5CRoommatey%5CRoommatey%5Cpages%5Cindex.js!./":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CMagnus%5CDocuments%5Cwebstuff%5CRoommatey%5CRoommatey%5Cpages%5Cindex.js ***!
+  \****************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13744,7 +13905,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_people3_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_people3_jpg__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_people4_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/people4.jpg */ "./components/people4.jpg");
 /* harmony import */ var _components_people4_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_people4_jpg__WEBPACK_IMPORTED_MODULE_8__);
-var _jsxFileName = "C:\\Users\\magnusdev\\Documents\\webstuff\\Roommatey\\front-end\\pages\\index.js";
+/* harmony import */ var _components_CalenderIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/CalenderIcon */ "./components/CalenderIcon.js");
+/* harmony import */ var _components_TaskIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/TaskIcon */ "./components/TaskIcon.js");
+/* harmony import */ var _components_ShoppingIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/ShoppingIcon */ "./components/ShoppingIcon.js");
+/* harmony import */ var _components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/styles/listStyles.css */ "./components/styles/listStyles.css");
+/* harmony import */ var _components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_12__);
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\pages\\index.js";
+
+
+
+
 
 
 
@@ -13757,47 +13927,101 @@ var _jsxFileName = "C:\\Users\\magnusdev\\Documents\\webstuff\\Roommatey\\front-
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "pages__Container",
   componentId: "sc-4uwwe5-0"
-})(["min-height:100vh;width:100vw;h1{display:flex;justify-content:center;color:#fff;padding:0;margin:0;}p{padding:0;margin:0;}img{height:35px;width:35px;object-fit:cover;}"]);
+})(["min-height:100vh;width:100vw;h1{display:flex;justify-content:center;color:#fff;padding:0;margin:0;}p{padding:0;margin:0;}img{height:40px;width:40px;object-fit:cover;}"]);
 var Content = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "pages__Content",
   componentId: "sc-4uwwe5-1"
 })(["display:flex;flex-direction:column;justify-content:center;align-items:center;margin:5%;"]);
 var TasksArr = [{
   profileimg: _components_people1_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-  description: "Doing Dishes",
+  user: "Josh",
+  description: ' Completed "Doing Dishes" to task',
+  type: "Task",
+  completed: true,
   posted: "14:55"
 }, {
   profileimg: _components_people2_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
-  description: "Take out Trash",
+  user: "Eve",
+  description: ' Added "Take out Trash" to task',
+  type: "Task",
+  completed: false,
   posted: "14:55"
 }, {
   profileimg: _components_people3_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
-  description: "Party at 8pm",
+  user: "Peter",
+  description: ' Added "Party at 8pm" to calender',
+  type: "Calender",
+  completed: false,
   posted: "14:55"
 }, {
   profileimg: _components_people4_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
-  description: "Studie Session",
+  user: "Tom",
+  description: ' Added "Studie Session" to calender',
+  type: "Calender",
+  completed: false,
   posted: "14:55"
 }];
 
+function renderSwitch(param, fill) {
+  switch (param) {
+    case "Calender":
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CalenderIcon__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        className: "listIcon",
+        fill: fill,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      });
+
+    case "Task":
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TaskIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        className: "listIcon",
+        fill: fill,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      });
+
+    case "Shopping":
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ShoppingIcon__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        className: "listIcon",
+        fill: fill,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
+      });
+
+    default:
+      return "foo";
+  }
+}
+
 var Home = function Home() {
+  var incomplete = "#FF6A7C";
+  var complete = "#5CBA47";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     headertitle: "The Arrogants",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 97
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 98
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 99
     },
     __self: this
   }, TasksArr.map(function (task, index) {
@@ -13805,7 +14029,7 @@ var Home = function Home() {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 102
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -13813,19 +14037,33 @@ var Home = function Home() {
       alt: task.description,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 103
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      style: {
+        marginRight: "5px"
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 104
       },
       __self: this
-    }, task.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DateText__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      style: {
+        fontSize: "1.4rem",
+        fontWeight: "700",
+        color: "#0c0d2c"
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 105
+      },
+      __self: this
+    }, task.user), task.description), renderSwitch(task.type, task.completed === true ? complete : incomplete), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DateText__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 120
       },
       __self: this
     }, task.posted));
@@ -13836,14 +14074,14 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 1:
-/*!***********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cmagnusdev%5CDocuments%5Cwebstuff%5CRoommatey%5Cfront-end%5Cpages%5Cindex.js ***!
-  \***********************************************************************************************************************************************************/
+/***/ 2:
+/*!********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CMagnus%5CDocuments%5Cwebstuff%5CRoommatey%5CRoommatey%5Cpages%5Cindex.js ***!
+  \********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cmagnusdev%5CDocuments%5Cwebstuff%5CRoommatey%5Cfront-end%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cmagnusdev%5CDocuments%5Cwebstuff%5CRoommatey%5Cfront-end%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CMagnus%5CDocuments%5Cwebstuff%5CRoommatey%5CRoommatey%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CMagnus%5CDocuments%5Cwebstuff%5CRoommatey%5CRoommatey%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
@@ -13859,5 +14097,5 @@ module.exports = dll_ce267202ee8be2590427;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map

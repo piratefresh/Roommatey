@@ -8,6 +8,10 @@ import img1 from "../components/people1.jpg";
 import img2 from "../components/people2.jpg";
 import img3 from "../components/people3.jpg";
 import img4 from "../components/people4.jpg";
+import CalenderIcon from "../components/CalenderIcon";
+import TaskIcon from "../components/TaskIcon";
+import ShoppingIcon from "../components/ShoppingIcon";
+import "../components/styles/listStyles.css";
 
 const Container = styled.div`
   min-height: 100vh;
@@ -24,8 +28,8 @@ const Container = styled.div`
     margin: 0;
   }
   img {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     object-fit: cover;
   }
 `;
@@ -38,13 +42,56 @@ const Content = styled.div`
 `;
 
 const TasksArr = [
-  {profileimg: img1, description: "Doing Dishes", posted: "14:55"},
-  {profileimg: img2, description: "Take out Trash", posted: "14:55"},
-  {profileimg: img3, description: "Party at 8pm", posted: "14:55"},
-  {profileimg: img4, description: "Studie Session", posted: "14:55"}
+  {
+    profileimg: img1,
+    user: "Josh",
+    description: ' Completed "Doing Dishes" to task',
+    type: "Task",
+    completed: true,
+    posted: "14:55"
+  },
+  {
+    profileimg: img2,
+    user: "Eve",
+    description: ' Added "Take out Trash" to task',
+    type: "Task",
+    completed: false,
+    posted: "14:55"
+  },
+  {
+    profileimg: img3,
+    user: "Peter",
+    description: ' Added "Party at 8pm" to calender',
+    type: "Calender",
+    completed: false,
+    posted: "14:55"
+  },
+  {
+    profileimg: img4,
+    user: "Tom",
+    description: ' Added "Studie Session" to calender',
+    type: "Calender",
+    completed: false,
+    posted: "14:55"
+  }
 ];
 
+function renderSwitch(param, fill) {
+  switch (param) {
+    case "Calender":
+      return <CalenderIcon className="listIcon" fill={fill} />;
+    case "Task":
+      return <TaskIcon className="listIcon" fill={fill} />;
+    case "Shopping":
+      return <ShoppingIcon className="listIcon" fill={fill} />;
+    default:
+      return "foo";
+  }
+}
+
 const Home = () => {
+  const incomplete = "#FF6A7C";
+  const complete = "#5CBA47";
   return (
     <>
       <Header headertitle={"The Arrogants"} />
@@ -54,7 +101,22 @@ const Home = () => {
             return (
               <TextBox key={index}>
                 <img src={task.profileimg} alt={task.description} />
-                <p>{task.description}</p>
+                <p style={{ marginRight: "5px" }}>
+                  <span
+                    style={{
+                      fontSize: "1.4rem",
+                      fontWeight: "700",
+                      color: "#0c0d2c"
+                    }}
+                  >
+                    {task.user}
+                  </span>
+                  {task.description}
+                </p>
+                {renderSwitch(
+                  task.type,
+                  task.completed === true ? complete : incomplete
+                )}
                 <DateText>{task.posted}</DateText>
               </TextBox>
             );

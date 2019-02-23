@@ -1,14 +1,17 @@
-import React, {Component} from "react";
-import styled, {ThemeProvider, createGlobalStyle} from "styled-components";
+import React, { Component } from "react";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Meta from "../components/Meta";
 
 const theme = {
-  red: "#E62D2D",
-  black: "#393939",
-  grey: "#3A3A3A",
-  yellow: "#F0B429",
+  rose: "#FF8A7C",
+  black: "#0cOD2C",
+  grey: "#8F909E",
+  blue: "#6981EC",
+  green: "#5CBA47",
+  yellow: "#FCC117",
+  lightyellow: "#FCCE00",
   lightgrey: "#E1E1E1",
   backgroundgrey: "#FAFAFA",
   offWhite: "#EDEDED",
@@ -22,12 +25,6 @@ const StyledPage = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    @import url('https://fonts.googleapis.com/css?family=Raleway');
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-  }
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -39,7 +36,9 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     font-size: 1.5rem;
     line-height: 2;
-    font-family: 'Raleway', sans-serif;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background: ${props => props.theme.backgroundgrey};
     @media screen and (max-width: 400px) {
       width: 100vw;

@@ -1,21 +1,26 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-import homeIcon from "./images/homeicon.svg";
-import tasksIcon from "./images/tasksicon.svg";
-import calenderIcon from "./images/calendericon.svg";
-import shoppingIcon from "./images/shoppingicon.svg";
+import HomeIcon from "./HomeIcon";
+import TaskIcon from "./TaskIcon";
+import ShoppingIcon from "./ShoppingIcon";
+import CalenderIcon from "./CalenderIcon";
+import "./styles/navStyles.css";
 
 const NavContainer = styled.div`
-  margin: 0 auto;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 10vh;
-  width: 100vw;
   background: #fff;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid ${props => props.theme.backgroundgrey};
+  /*  box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.5); */
   ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
+    padding: 0;
     li {
     }
   }
@@ -40,26 +45,26 @@ const Nav = () => (
     <ul>
       <Link href="/">
         <LinkContainer>
-          <img src={homeIcon} />
+          <HomeIcon className="iconNav" fill="#F0B429" />
           <a>Home</a>
         </LinkContainer>
       </Link>
       <Link href="/tasks">
         <LinkContainer>
-          <img src={tasksIcon} style={{fill: "#818181"}} />
+          <TaskIcon className="iconNav" />
           <a>Tasks</a>
         </LinkContainer>
       </Link>
-      <Link href="/">
+      <Link href="/tasks">
         <LinkContainer>
-          <img src={calenderIcon} />
-          <a>Calender</a>
+          <ShoppingIcon className="iconNav" />
+          <a>Shopping</a>
         </LinkContainer>
       </Link>
-      <Link href="/">
+      <Link href="/tasks">
         <LinkContainer>
-          <img src={shoppingIcon} />
-          <a>Shopping</a>
+          <CalenderIcon className="iconNav" />
+          <a>Calender</a>
         </LinkContainer>
       </Link>
     </ul>

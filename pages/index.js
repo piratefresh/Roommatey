@@ -4,13 +4,14 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import TextBox from "../components/TextBox";
 import DateText from "../components/DateText";
+// Profile pics
 import img1 from "../components/people1.jpg";
 import img2 from "../components/people2.jpg";
 import img3 from "../components/people3.jpg";
 import img4 from "../components/people4.jpg";
-import CalenderIcon from "../components/CalenderIcon";
-import TaskIcon from "../components/TaskIcon";
-import ShoppingIcon from "../components/ShoppingIcon";
+//Icons
+import ProgressIcon from "../components/icons/ProgressIcon";
+import CompletedIcon from "../components/icons/CompletedIcon";
 import "../components/styles/listStyles.css";
 
 const Container = styled.div`
@@ -45,7 +46,7 @@ const TasksArr = [
   {
     profileimg: img1,
     user: "Josh",
-    description: ' Completed "Doing Dishes" to task',
+    description: ' Completed "Doing Dishes" Task',
     type: "Task",
     completed: true,
     posted: "14:55"
@@ -73,25 +74,28 @@ const TasksArr = [
     type: "Calender",
     completed: false,
     posted: "14:55"
+  },
+  {
+    profileimg: img3,
+    user: "Peter",
+    description: ' Completed "Meal preping" to calender',
+    type: "Calender",
+    completed: true,
+    posted: "14:55"
+  },
+  {
+    profileimg: img4,
+    user: "Tom",
+    description: ' Completed "Laundry" Task',
+    type: "Task",
+    completed: true,
+    posted: "14:55"
   }
 ];
 
-function renderSwitch(param, fill) {
-  switch (param) {
-    case "Calender":
-      return <CalenderIcon className="listIcon" fill={fill} />;
-    case "Task":
-      return <TaskIcon className="listIcon" fill={fill} />;
-    case "Shopping":
-      return <ShoppingIcon className="listIcon" fill={fill} />;
-    default:
-      return "foo";
-  }
-}
-
 const Home = () => {
-  const incomplete = "#FF6A7C";
-  const complete = "#5CBA47";
+  const incomplete = "#FCC117";
+  const complete = "#53F029";
   return (
     <>
       <Header headertitle={"The Arrogants"} />
@@ -101,21 +105,24 @@ const Home = () => {
             return (
               <TextBox key={index}>
                 <img src={task.profileimg} alt={task.description} />
-                <p style={{ marginRight: "5px" }}>
-                  <span
-                    style={{
-                      fontSize: "1.4rem",
-                      fontWeight: "700",
-                      color: "#0c0d2c"
-                    }}
-                  >
-                    {task.user}
-                  </span>
-                  {task.description}
-                </p>
-                {renderSwitch(
-                  task.type,
-                  task.completed === true ? complete : incomplete
+                <div className="task">
+                  <p>
+                    <span
+                      style={{
+                        fontSize: "1.4rem",
+                        fontWeight: "700",
+                        color: "#0c0d2c"
+                      }}
+                    >
+                      {task.user}
+                    </span>
+                  </p>
+                  <p style={{ marginRight: "5px" }}>{task.description}</p>
+                </div>
+                {task.completed === true ? (
+                  <CompletedIcon fill={complete} className="listIcon" />
+                ) : (
+                  <ProgressIcon fill={incomplete} className="listIcon" />
                 )}
                 <DateText>{task.posted}</DateText>
               </TextBox>

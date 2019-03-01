@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-import HomeIcon from "./HomeIcon";
-import TaskIcon from "./TaskIcon";
-import ShoppingIcon from "./ShoppingIcon";
-import CalenderIcon from "./CalenderIcon";
+import HomeIcon from "./icons/HomeIcon";
+import TaskIcon from "./icons/TaskIcon";
+import ShoppingIcon from "./icons/ShoppingIcon";
+import CalenderIcon from "./icons/CalenderIcon";
 import "./styles/navStyles.css";
 
 const NavContainer = styled.div`
@@ -38,6 +38,9 @@ const LinkContainer = styled.div`
   a {
     color: #818181;
   }
+  .active-nav {
+    color: ${props => props.theme.yellow};
+  }
 `;
 
 const Nav = () => (
@@ -46,7 +49,7 @@ const Nav = () => (
       <Link href="/">
         <LinkContainer>
           <HomeIcon className="iconNav" fill="#F0B429" />
-          <a>Home</a>
+          <a className="active-nav">Home</a>
         </LinkContainer>
       </Link>
       <Link href="/tasks">

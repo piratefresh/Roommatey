@@ -93,57 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/CalenderIcon.js":
-/*!************************************!*\
-  !*** ./components/CalenderIcon.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\CalenderIcon.js";
-
-
-
-function CalenderIcon(_ref) {
-  var className = _ref.className,
-      fill = _ref.fill;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    viewBox: "0 0 24 24",
-    className: className,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    fill: fill,
-    d: "M9 10H7v2h2v-2m4 0h-2v2h2v-2m4 0h-2v2h2v-2m2-7h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V8h14v11z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }));
-}
-
-CalenderIcon.propTypes = {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
-};
-CalenderIcon.defaultProps = {
-  className: undefined,
-  fill: "rgba(0, 0, 0, 0.35)"
-};
-/* harmony default export */ __webpack_exports__["default"] = (CalenderIcon);
-
-/***/ }),
-
 /***/ "./components/DateText.js":
 /*!********************************!*\
   !*** ./components/DateText.js ***!
@@ -159,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 var DateText = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.withConfig({
   displayName: "DateText",
   componentId: "sc-1ymejcc-0"
-})(["position:absolute;right:5%;bottom:0;display:flex;color:", ";font-size:1rem;"], function (props) {
+})(["position:absolute;right:5%;bottom:0;display:flex;color:", " !important;font-size:1rem;"], function (props) {
   return props.theme.yellow;
 });
 /* harmony default export */ __webpack_exports__["default"] = (DateText);
@@ -188,135 +137,25 @@ var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__HeaderContainer",
   componentId: "sc-1cndaf5-0"
-})(["background:#fff;width:100%;overflow:hidden;height:10vh;border-bottom:2px solid ", ";display:flex;justify-content:center;h1{color:", ";margin:0;padding:0;}"], function (props) {
-  return props.theme.backgroundgrey;
-}, function (props) {
-  return props.theme.yellow;
-});
+})(["width:100%;overflow:hidden;height:6vh;display:flex;justify-content:center;h1{color:#4e424a;font-size:2rem;margin:0;padding:0;}"]);
 
 var Header = function Header(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, props.headertitle));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
-/***/ "./components/ShoppingIcon.js":
-/*!************************************!*\
-  !*** ./components/ShoppingIcon.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\ShoppingIcon.js";
-
-
-
-function ShoppingIcon(_ref) {
-  var className = _ref.className,
-      fill = _ref.fill,
-      height = _ref.height,
-      width = _ref.width;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    viewBox: "0 0 24 24",
-    className: className,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    fill: fill,
-    d: "M3 5h6v6H3V5m2 2v2h2V7H5m6 0h10v2H11V7m0 8h10v2H11v-2m-6 5l-3.5-3.5 1.41-1.41L5 17.17l4.59-4.58L11 14l-6 6z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }));
-}
-
-ShoppingIcon.propTypes = {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
-};
-ShoppingIcon.defaultProps = {
-  className: undefined,
-  fill: "rgba(0, 0, 0, 0.35)"
-};
-/* harmony default export */ __webpack_exports__["default"] = (ShoppingIcon);
-
-/***/ }),
-
-/***/ "./components/TaskIcon.js":
-/*!********************************!*\
-  !*** ./components/TaskIcon.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\TaskIcon.js";
-
-
-
-function TaskIcon(_ref) {
-  var className = _ref.className,
-      fill = _ref.fill,
-      height = _ref.height,
-      width = _ref.width;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    viewBox: "0 0 24 24",
-    className: className,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    fill: fill,
-    d: "M3 3h6v4H3V3m12 7h6v4h-6v-4m0 7h6v4h-6v-4m-2-4H7v5h6v2H5V9h2v2h6v2z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }));
-}
-
-TaskIcon.propTypes = {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
-};
-TaskIcon.defaultProps = {
-  className: undefined,
-  fill: "rgba(0, 0, 0, 0.35)"
-};
-/* harmony default export */ __webpack_exports__["default"] = (TaskIcon);
 
 /***/ }),
 
@@ -335,12 +174,131 @@ __webpack_require__.r(__webpack_exports__);
 var TextBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "TextBox",
   componentId: "sc-1f1pr5y-0"
-})(["position:relative;display:grid;grid-template-columns:[profileImage]1fr [task]3fr [metadata]1fr;align-items:center;background:#fff;box-shadow:", ";border-radius:5px;padding:5% 2%;width:90vw;font-size:1.4rem;margin-bottom:5%;img{grid-column:profileImage;border-radius:10%;}p{margin-right:5px;}span{font-size:1rem;color:", ";}"], function (props) {
+})(["position:relative;display:grid;grid-template-columns:[profileImage]1fr [task]3fr [metadata]1fr;align-items:center;background:#fff;box-shadow:", ";border-radius:5px;padding:5% 2%;width:90vw;font-size:1.4rem;margin-bottom:5%;}img{grid-column:profileImage;border-radius:10%;}p{margin-right:5px;color:#666;}span{font-size:1rem;color:", ";}"], function (props) {
   return props.theme.bs;
 }, function (props) {
   return props.theme.yellow;
 });
 /* harmony default export */ __webpack_exports__["default"] = (TextBox);
+
+/***/ }),
+
+/***/ "./components/icons/CompletedIcon.js":
+/*!*******************************************!*\
+  !*** ./components/icons/CompletedIcon.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\icons\\CompletedIcon.js";
+
+
+
+function CompletedIcon(_ref) {
+  var _React$createElement;
+
+  var className = _ref.className,
+      fill = _ref.fill;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 426.667 426.667",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", (_React$createElement = {
+    fill: fill,
+    d: "M213.333 0C95.518 0 0 95.514 0 213.333s95.518 213.333 213.333 213.333c117.828 0 213.333-95.514 213.333-213.333S331.157 0 213.333 0zm-39.134 322.918l-93.935-93.931 31.309-31.309 62.626 62.622 140.894-140.898 31.309 31.309-172.203 172.207z"
+  }, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "fill", "#6ac259"), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$createElement, "__self", this), _React$createElement)));
+}
+
+CompletedIcon.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  fill: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string
+};
+CompletedIcon.defaultProps = {
+  className: undefined,
+  fill: "rgba(0, 0, 0, 0.35)"
+};
+/* harmony default export */ __webpack_exports__["default"] = (CompletedIcon);
+
+/***/ }),
+
+/***/ "./components/icons/ProgressIcon.js":
+/*!******************************************!*\
+  !*** ./components/icons/ProgressIcon.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\icons\\ProgressIcon.js";
+
+
+
+function ProgressIcon(_ref) {
+  var className = _ref.className,
+      fill = _ref.fill;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 363.868 363.868",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("g", {
+    fill: fill,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M92.723 274.945c-3.178 3.178-5.747 9.388-5.747 13.875v58.444h33.929v-92.373c0-4.487-2.569-5.56-5.747-2.382l-22.435 22.436zM241.752 219.573c-3.17 3.178-5.747 9.389-5.747 13.884v113.816h33.929V199.487c0-4.487-2.569-5.552-5.747-2.374l-22.435 22.46zM291.418 169.834c-3.178 3.17-5.755 9.38-5.755 13.867v163.563h31.547V152.212c0-4.487-2.577-5.56-5.755-2.382l-20.037 20.004zM193.078 268.239s-1.512 1.52-3.381 3.39c-1.861 1.87-3.373 7.031-3.373 11.518v64.118h33.929v-98.047c0-4.487-2.577-5.56-5.755-2.382l-21.42 21.403zM142.405 250.998c-3.178-3.17-5.755-2.105-5.755 2.382v93.885h33.929v-60.03c0-4.487-2.439-10.559-5.454-13.558l-5.454-5.43-17.266-17.249zM50.023 317.669l-10.957 10.974c-3.17 3.178-5.739 8.633-5.739 12.193v6.438h37.871V304.59c0-4.487-2.569-5.552-5.747-2.374l-15.428 15.453z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M358.121 150.724c3.17 3.178 5.747 2.105 5.747-2.382V32.193c0-8.316-7.966-15.599-16.233-15.599H232.16c-4.487 0-5.56 2.577-2.382 5.755l41.074 41.106-16.753 16.68-77.701 77.774L135.3 116.82c-3.178-3.178-8.316-3.17-11.494 0L9.519 231.189c-12.697 12.705-12.689 33.295.008 45.991l.797.805c12.697 12.697 33.287 12.697 45.975-.008l73.247-73.287 41.098 41.057c3.178 3.17 8.324 3.17 11.502 0l135.479-135.503 40.496 40.48z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  })));
+}
+
+ProgressIcon.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+ProgressIcon.defaultProps = {
+  className: undefined,
+  fill: "rgba(0, 0, 0, 0.35)"
+};
+/* harmony default export */ __webpack_exports__["default"] = (ProgressIcon);
 
 /***/ }),
 
@@ -606,6 +564,36 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
 
 /***/ }),
 
@@ -1401,21 +1389,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_people3_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_people3_jpg__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _components_people4_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/people4.jpg */ "./components/people4.jpg");
 /* harmony import */ var _components_people4_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_people4_jpg__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_CalenderIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/CalenderIcon */ "./components/CalenderIcon.js");
-/* harmony import */ var _components_TaskIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/TaskIcon */ "./components/TaskIcon.js");
-/* harmony import */ var _components_ShoppingIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/ShoppingIcon */ "./components/ShoppingIcon.js");
-/* harmony import */ var _components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/styles/listStyles.css */ "./components/styles/listStyles.css");
-/* harmony import */ var _components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _components_icons_ProgressIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/icons/ProgressIcon */ "./components/icons/ProgressIcon.js");
+/* harmony import */ var _components_icons_CompletedIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/icons/CompletedIcon */ "./components/icons/CompletedIcon.js");
+/* harmony import */ var _components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/styles/listStyles.css */ "./components/styles/listStyles.css");
+/* harmony import */ var _components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_styles_listStyles_css__WEBPACK_IMPORTED_MODULE_11__);
 var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\pages\\index.js";
 
 
 
 
+ // Profile pics
 
 
 
 
-
+ //Icons
 
 
 
@@ -1431,7 +1419,7 @@ var Content = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withC
 var TasksArr = [{
   profileimg: _components_people1_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
   user: "Josh",
-  description: ' Completed "Doing Dishes" to task',
+  description: ' Completed "Doing Dishes" Task',
   type: "Task",
   completed: true,
   posted: "14:55"
@@ -1456,68 +1444,42 @@ var TasksArr = [{
   type: "Calender",
   completed: false,
   posted: "14:55"
+}, {
+  profileimg: _components_people3_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+  user: "Peter",
+  description: ' Completed "Meal preping" to calender',
+  type: "Calender",
+  completed: true,
+  posted: "14:55"
+}, {
+  profileimg: _components_people4_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
+  user: "Tom",
+  description: ' Completed "Laundry" Task',
+  type: "Task",
+  completed: true,
+  posted: "14:55"
 }];
 
-function renderSwitch(param, fill) {
-  switch (param) {
-    case "Calender":
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CalenderIcon__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        className: "listIcon",
-        fill: fill,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 82
-        },
-        __self: this
-      });
-
-    case "Task":
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TaskIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        className: "listIcon",
-        fill: fill,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 84
-        },
-        __self: this
-      });
-
-    case "Shopping":
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ShoppingIcon__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        className: "listIcon",
-        fill: fill,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 86
-        },
-        __self: this
-      });
-
-    default:
-      return "foo";
-  }
-}
-
 var Home = function Home() {
-  var incomplete = "#FF6A7C";
-  var complete = "#5CBA47";
+  var incomplete = "#FCC117";
+  var complete = "#53F029";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     headertitle: "The Arrogants",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 101
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 102
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 103
     },
     __self: this
   }, TasksArr.map(function (task, index) {
@@ -1525,7 +1487,7 @@ var Home = function Home() {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102
+        lineNumber: 106
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1533,16 +1495,20 @@ var Home = function Home() {
       alt: task.description,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103
+        lineNumber: 107
       },
       __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      style: {
-        marginRight: "5px"
-      },
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "task",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104
+        lineNumber: 108
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 109
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1553,13 +1519,38 @@ var Home = function Home() {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105
+        lineNumber: 110
       },
       __self: this
-    }, task.user), task.description), renderSwitch(task.type, task.completed === true ? complete : incomplete), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DateText__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, task.user)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      style: {
+        marginRight: "5px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 120
+      },
+      __self: this
+    }, task.description)), task.completed === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_icons_CompletedIcon__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      fill: complete,
+      className: "listIcon",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123
+      },
+      __self: this
+    }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_icons_ProgressIcon__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      fill: incomplete,
+      className: "listIcon",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 125
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DateText__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 127
       },
       __self: this
     }, task.posted));

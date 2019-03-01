@@ -5,7 +5,7 @@ const DateText = styled.p`
   right: 5%;
   bottom: 0;
   display: flex;
-  color: ${props => props.theme.yellow};
+  color: ${props => props.theme.yellow} !important;
   font-size: 1rem;
 `;
 

@@ -1,17 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import { Formik } from "formik";
+import styled from "styled-components";
 
 import Header from "../components/Header";
+import UserForm from "../components/UserForm";
 
-const Register = () => {
-  return (
-    <>
-      <Header headertitle={"Sign Up"} />
-      <div>
-        <h1>Registration</h1>
-      </div>
-    </>
-  );
-};
+const Registration = () => (
+  <>
+    <Header headertitle="Registration" />
+    <div>
+      <UserForm />
+    </div>
+  </>
+);
 
-export default Register;
+export default Registration;

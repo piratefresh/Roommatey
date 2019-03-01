@@ -93,57 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/CalenderIcon.js":
-/*!************************************!*\
-  !*** ./components/CalenderIcon.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\CalenderIcon.js";
-
-
-
-function CalenderIcon(_ref) {
-  var className = _ref.className,
-      fill = _ref.fill;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    viewBox: "0 0 24 24",
-    className: className,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    fill: fill,
-    d: "M9 10H7v2h2v-2m4 0h-2v2h2v-2m4 0h-2v2h2v-2m2-7h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V8h14v11z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }));
-}
-
-CalenderIcon.propTypes = {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
-};
-CalenderIcon.defaultProps = {
-  className: undefined,
-  fill: "rgba(0, 0, 0, 0.35)"
-};
-/* harmony default export */ __webpack_exports__["default"] = (CalenderIcon);
-
-/***/ }),
-
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -166,92 +115,25 @@ var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__HeaderContainer",
   componentId: "sc-1cndaf5-0"
-})(["background:#fff;width:100%;overflow:hidden;height:10vh;border-bottom:2px solid ", ";display:flex;justify-content:center;h1{color:", ";margin:0;padding:0;}"], function (props) {
-  return props.theme.backgroundgrey;
-}, function (props) {
-  return props.theme.yellow;
-});
+})(["width:100%;overflow:hidden;height:6vh;display:flex;justify-content:center;h1{color:#4e424a;font-size:2rem;margin:0;padding:0;}"]);
 
 var Header = function Header(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, props.headertitle));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
-/***/ "./components/HomeIcon.js":
-/*!********************************!*\
-  !*** ./components/HomeIcon.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\HomeIcon.js";
-
-
-
-function HomeIcon(_ref) {
-  var className = _ref.className,
-      fill = _ref.fill,
-      height = _ref.height,
-      width = _ref.width;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    height: height,
-    width: width,
-    viewBox: "0 0 512 512",
-    className: className,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    fill: fill,
-    d: "M506.555 208.064L263.859 30.367c-4.68-3.426-11.038-3.426-15.716 0L5.445 208.064c-5.928 4.341-7.216 12.665-2.875 18.593s12.666 7.214 18.593 2.875L256 57.588l234.837 171.943c2.368 1.735 5.12 2.57 7.848 2.57 4.096 0 8.138-1.885 10.744-5.445 4.342-5.927 3.054-14.251-2.874-18.592z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    fill: fill,
-    d: "M442.246 232.543c-7.346 0-13.303 5.956-13.303 13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52s-66.52 29.842-66.52 66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303 5.956-13.303 13.303V470.9c0 7.347 5.957 13.303 13.303 13.303h133.029c6.996 0 12.721-5.405 13.251-12.267.032-.311.052-.651.052-1.036V342.01c0-22.009 17.905-39.914 39.914-39.914s39.914 17.906 39.914 39.914V470.9c0 .383.02.717.052 1.024.524 6.867 6.251 12.279 13.251 12.279h133.029c7.347 0 13.303-5.956 13.303-13.303V245.847c-.001-7.348-5.957-13.304-13.304-13.304z",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }));
-}
-
-HomeIcon.propTypes = {
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
-};
-HomeIcon.defaultProps = {
-  className: undefined,
-  fill: "rgba(0, 0, 0, 0.35)"
-};
-/* harmony default export */ __webpack_exports__["default"] = (HomeIcon);
 
 /***/ }),
 
@@ -339,10 +221,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _HomeIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HomeIcon */ "./components/HomeIcon.js");
-/* harmony import */ var _TaskIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TaskIcon */ "./components/TaskIcon.js");
-/* harmony import */ var _ShoppingIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ShoppingIcon */ "./components/ShoppingIcon.js");
-/* harmony import */ var _CalenderIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CalenderIcon */ "./components/CalenderIcon.js");
+/* harmony import */ var _icons_HomeIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icons/HomeIcon */ "./components/icons/HomeIcon.js");
+/* harmony import */ var _icons_TaskIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./icons/TaskIcon */ "./components/icons/TaskIcon.js");
+/* harmony import */ var _icons_ShoppingIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./icons/ShoppingIcon */ "./components/icons/ShoppingIcon.js");
+/* harmony import */ var _icons_CalenderIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./icons/CalenderIcon */ "./components/icons/CalenderIcon.js");
 /* harmony import */ var _styles_navStyles_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/navStyles.css */ "./components/styles/navStyles.css");
 /* harmony import */ var _styles_navStyles_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_navStyles_css__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\Nav.js";
@@ -363,124 +245,127 @@ var NavContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.
 var LinkContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Nav__LinkContainer",
   componentId: "sc-1nzykj9-1"
-})(["display:flex;flex-direction:column;justify-content:center;align-items:center;img{height:30px;width:30px;}a{color:#818181;}"]);
+})(["display:flex;flex-direction:column;justify-content:center;align-items:center;img{height:30px;width:30px;}a{color:#818181;}.active-nav{color:", ";}"], function (props) {
+  return props.theme.yellow;
+});
 
 var Nav = function Nav() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LinkContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 50
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomeIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons_HomeIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "iconNav",
     fill: "#F0B429",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "active-nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 52
     },
     __self: this
   }, "Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/tasks",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LinkContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 56
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TaskIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons_TaskIcon__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "iconNav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 57
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 58
     },
     __self: this
   }, "Tasks"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/tasks",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LinkContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 62
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ShoppingIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons_ShoppingIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "iconNav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 63
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 64
     },
     __self: this
   }, "Shopping"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/tasks",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LinkContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 68
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CalenderIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons_CalenderIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: "iconNav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 69
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 70
     },
     __self: this
   }, "Calender")))));
@@ -623,10 +508,10 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./components/ShoppingIcon.js":
-/*!************************************!*\
-  !*** ./components/ShoppingIcon.js ***!
-  \************************************/
+/***/ "./components/icons/CalenderIcon.js":
+/*!******************************************!*\
+  !*** ./components/icons/CalenderIcon.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -636,7 +521,121 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\ShoppingIcon.js";
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\icons\\CalenderIcon.js";
+
+
+
+function CalenderIcon(_ref) {
+  var className = _ref.className,
+      fill = _ref.fill;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    viewBox: "0 0 24 24",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: fill,
+    d: "M9 10H7v2h2v-2m4 0h-2v2h2v-2m4 0h-2v2h2v-2m2-7h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V8h14v11z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }));
+}
+
+CalenderIcon.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+CalenderIcon.defaultProps = {
+  className: undefined,
+  fill: "rgba(0, 0, 0, 0.35)"
+};
+/* harmony default export */ __webpack_exports__["default"] = (CalenderIcon);
+
+/***/ }),
+
+/***/ "./components/icons/HomeIcon.js":
+/*!**************************************!*\
+  !*** ./components/icons/HomeIcon.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\icons\\HomeIcon.js";
+
+
+
+function HomeIcon(_ref) {
+  var className = _ref.className,
+      fill = _ref.fill,
+      height = _ref.height,
+      width = _ref.width;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    height: height,
+    width: width,
+    viewBox: "0 0 512 512",
+    className: className,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: fill,
+    d: "M506.555 208.064L263.859 30.367c-4.68-3.426-11.038-3.426-15.716 0L5.445 208.064c-5.928 4.341-7.216 12.665-2.875 18.593s12.666 7.214 18.593 2.875L256 57.588l234.837 171.943c2.368 1.735 5.12 2.57 7.848 2.57 4.096 0 8.138-1.885 10.744-5.445 4.342-5.927 3.054-14.251-2.874-18.592z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    fill: fill,
+    d: "M442.246 232.543c-7.346 0-13.303 5.956-13.303 13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52s-66.52 29.842-66.52 66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303 5.956-13.303 13.303V470.9c0 7.347 5.957 13.303 13.303 13.303h133.029c6.996 0 12.721-5.405 13.251-12.267.032-.311.052-.651.052-1.036V342.01c0-22.009 17.905-39.914 39.914-39.914s39.914 17.906 39.914 39.914V470.9c0 .383.02.717.052 1.024.524 6.867 6.251 12.279 13.251 12.279h133.029c7.347 0 13.303-5.956 13.303-13.303V245.847c-.001-7.348-5.957-13.304-13.304-13.304z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }));
+}
+
+HomeIcon.propTypes = {
+  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  fill: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+HomeIcon.defaultProps = {
+  className: undefined,
+  fill: "rgba(0, 0, 0, 0.35)"
+};
+/* harmony default export */ __webpack_exports__["default"] = (HomeIcon);
+
+/***/ }),
+
+/***/ "./components/icons/ShoppingIcon.js":
+/*!******************************************!*\
+  !*** ./components/icons/ShoppingIcon.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\icons\\ShoppingIcon.js";
 
 
 
@@ -676,10 +675,10 @@ ShoppingIcon.defaultProps = {
 
 /***/ }),
 
-/***/ "./components/TaskIcon.js":
-/*!********************************!*\
-  !*** ./components/TaskIcon.js ***!
-  \********************************/
+/***/ "./components/icons/TaskIcon.js":
+/*!**************************************!*\
+  !*** ./components/icons/TaskIcon.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -689,7 +688,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\TaskIcon.js";
+var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\components\\icons\\TaskIcon.js";
 
 
 

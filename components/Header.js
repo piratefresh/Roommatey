@@ -2,15 +2,14 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  background: #fff;
   width: 100%;
   overflow: hidden;
-  height: 10vh;
-  border-bottom: 2px solid ${props => props.theme.backgroundgrey};
+  height: 6vh;
   display: flex;
   justify-content: center;
   h1 {
-    color: ${props => props.theme.yellow};
+    color: #4e424a;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
   }

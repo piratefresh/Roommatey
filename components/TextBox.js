@@ -12,12 +12,14 @@ const TextBox = styled.div`
   width: 90vw;
   font-size: 1.4rem;
   margin-bottom: 5%;
+  }
   img {
     grid-column: profileImage;
     border-radius: 10%;
   }
   p {
     margin-right: 5px;
+    color: #666;
   }
   span {
     font-size: 1rem;

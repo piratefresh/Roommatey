@@ -1,5 +1,5 @@
 {
-  "presets": ["next/babel"],
+  "presets": ["next/babel", "@babel/preset-env", "@babel/preset-react"],
   "plugins": [
     [
       "styled-components",
@@ -8,6 +8,16 @@
         "displayName": true,
         "preprocess": false
       }
-    ]
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "^react-native$": "react-native-web"
+        }
+      }
+    ],
+    ["@babel/plugin-proposal-class-properties"]
   ]
 }

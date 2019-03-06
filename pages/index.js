@@ -98,7 +98,10 @@ const Home = () => {
   const complete = "#53F029";
   return (
     <>
-      <Header headertitle={"The Arrogants"} />
+      <Header
+        headertitle={"The Arrogants"}
+        headeraddress={"1515 West Oxford St"}
+      />
       <Container>
         <Content>
           {TasksArr.map((task, index) => {

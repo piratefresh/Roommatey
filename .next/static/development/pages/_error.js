@@ -1279,7 +1279,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.4' };
+var core = module.exports = { version: '2.6.5' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -3656,11 +3656,11 @@ var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*!
 
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js"));
 
+var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js"));
+
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js"));
 
 var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js"));
-
-var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js"));
 
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js"));
 
@@ -3708,8 +3708,8 @@ function withSideEffect() {
       _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(SideEffect).call(this, props));
 
       if (isServer) {
-        mountedInstances.add((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
-        emitChange((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
+        mountedInstances.add((0, _assertThisInitialized2.default)(_this));
+        emitChange((0, _assertThisInitialized2.default)(_this));
       }
 
       return _this;
@@ -4649,34 +4649,34 @@ module.exports = ReactPropTypesSecret;
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_ce267202ee8be2590427 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_d07fc6fef0019ab91fb7 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce267202ee8be2590427 */ "dll-reference dll_ce267202ee8be2590427"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_d07fc6fef0019ab91fb7 */ "dll-reference dll_d07fc6fef0019ab91fb7"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_ce267202ee8be2590427 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_d07fc6fef0019ab91fb7 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce267202ee8be2590427 */ "dll-reference dll_ce267202ee8be2590427"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_d07fc6fef0019ab91fb7 */ "dll-reference dll_d07fc6fef0019ab91fb7"))("./node_modules/react/index.js");
 
 /***/ }),
 
-/***/ "dll-reference dll_ce267202ee8be2590427":
+/***/ "dll-reference dll_d07fc6fef0019ab91fb7":
 /*!*******************************************!*\
-  !*** external "dll_ce267202ee8be2590427" ***!
+  !*** external "dll_d07fc6fef0019ab91fb7" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_ce267202ee8be2590427;
+module.exports = dll_d07fc6fef0019ab91fb7;
 
 /***/ })
 

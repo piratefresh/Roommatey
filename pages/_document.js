@@ -1,8 +1,11 @@
 import Document, { Head, Main, NextScript } from "next/document";
+import { AppRegistry } from "react-native-web";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
+    AppRegistry.registerComponent("Main", () => Main);
+    const { getStyleElement } = AppRegistry.getApplication("Main");
     // Step 1: Create an instance of ServerStyleSheet
     const sheet = new ServerStyleSheet();
     // Step 2: Retrieve styles from components in the page

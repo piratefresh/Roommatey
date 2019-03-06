@@ -781,6 +781,21 @@ var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 
 var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js"));
 
+var _getOwnPropertySymbols = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js"));
+
+var __rest = void 0 && (void 0).__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof _getOwnPropertySymbols.default === "function") for (var i = 0, p = (0, _getOwnPropertySymbols.default)(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
 var __importStar = void 0 && (void 0).__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
   var result = {};
@@ -810,11 +825,6 @@ var htmlescape_1 = __webpack_require__(/*! ../server/htmlescape */ "./node_modul
 
 var server_1 = __importDefault(__webpack_require__(/*! styled-jsx/server */ "./node_modules/styled-jsx/server.js"));
 
-var Fragment = react_1.default.Fragment || function Fragment(_ref) {
-  var children = _ref.children;
-  return react_1.default.createElement("div", null, children);
-};
-
 var Document =
 /*#__PURE__*/
 function (_react_1$Component) {
@@ -839,12 +849,12 @@ function (_react_1$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react_1.default.createElement("html", null, react_1.default.createElement(Head, null), react_1.default.createElement("body", null, react_1.default.createElement(Main, null), react_1.default.createElement(NextScript, null)));
+      return react_1.default.createElement(Html, null, react_1.default.createElement(Head, null), react_1.default.createElement("body", null, react_1.default.createElement(Main, null), react_1.default.createElement(NextScript, null)));
     }
   }], [{
     key: "getInitialProps",
-    value: function getInitialProps(_ref2) {
-      var renderPage = _ref2.renderPage;
+    value: function getInitialProps(_ref) {
+      var renderPage = _ref.renderPage;
 
       var _renderPage = renderPage(),
           html = _renderPage.html,
@@ -867,10 +877,45 @@ Document.childContextTypes = {
 };
 exports.default = Document;
 
-var Head =
+var Html =
 /*#__PURE__*/
 function (_react_1$Component2) {
-  (0, _inherits2.default)(Head, _react_1$Component2);
+  (0, _inherits2.default)(Html, _react_1$Component2);
+
+  function Html() {
+    (0, _classCallCheck2.default)(this, Html);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Html).apply(this, arguments));
+  }
+
+  (0, _createClass2.default)(Html, [{
+    key: "render",
+    value: function render() {
+      var amphtml = this.context._documentProps.amphtml;
+
+      var _a = this.props,
+          children = _a.children,
+          props = __rest(_a, ["children"]);
+
+      return react_1.default.createElement("html", (0, _assign.default)({}, props, {
+        amp: amphtml ? '' : null
+      }), children);
+    }
+  }]);
+  return Html;
+}(react_1.Component);
+
+Html.contextTypes = {
+  _documentProps: prop_types_1.default.any
+};
+Html.propTypes = {
+  children: prop_types_1.default.node.isRequired
+};
+exports.Html = Html;
+
+var Head =
+/*#__PURE__*/
+function (_react_1$Component3) {
+  (0, _inherits2.default)(Head, _react_1$Component3);
 
   function Head() {
     (0, _classCallCheck2.default)(this, Head);
@@ -959,14 +1004,15 @@ function (_react_1$Component2) {
     key: "render",
     value: function render() {
       var _this$context$_docume4 = this.context._documentProps,
+          ampEnabled = _this$context$_docume4.ampEnabled,
           head = _this$context$_docume4.head,
           styles = _this$context$_docume4.styles,
+          amphtml = _this$context$_docume4.amphtml,
           assetPrefix = _this$context$_docume4.assetPrefix,
           __NEXT_DATA__ = _this$context$_docume4.__NEXT_DATA__;
       var _devOnlyInvalidateCacheQueryString = this.context._devOnlyInvalidateCacheQueryString;
       var page = __NEXT_DATA__.page,
           buildId = __NEXT_DATA__.buildId;
-      var pagePathname = getPagePathname(page);
       var children = this.props.children; // show a warning if Head contains <title> (only in development)
 
       if (true) {
@@ -980,9 +1026,42 @@ function (_react_1$Component2) {
         if (this.props.crossOrigin) console.warn('Warning: `Head` attribute `crossOrigin` is deprecated. https://err.sh/next.js/doc-crossorigin-deprecated');
       }
 
-      return react_1.default.createElement("head", (0, _assign.default)({}, this.props), children, head, page !== '/_error' && react_1.default.createElement("link", {
+      return react_1.default.createElement("head", (0, _assign.default)({}, this.props), children, head, amphtml && react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width,minimum-scale=1,initial-scale=1"
+      }), react_1.default.createElement("link", {
+        rel: "canonical",
+        href: page
+      }), react_1.default.createElement("link", {
+        rel: "preload",
+        as: "script",
+        href: "https://cdn.ampproject.org/v0.js"
+      }), styles && react_1.default.createElement("style", {
+        "amp-custom": "",
+        dangerouslySetInnerHTML: {
+          __html: styles.map(function (style) {
+            return style.props.dangerouslySetInnerHTML.__html;
+          }).join('')
+        }
+      }), react_1.default.createElement("style", {
+        "amp-boilerplate": "",
+        dangerouslySetInnerHTML: {
+          __html: "body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}"
+        }
+      }), react_1.default.createElement("noscript", null, react_1.default.createElement("style", {
+        "amp-boilerplate": "",
+        dangerouslySetInnerHTML: {
+          __html: "body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}"
+        }
+      })), react_1.default.createElement("script", {
+        async: true,
+        src: "https://cdn.ampproject.org/v0.js"
+      })), !amphtml && react_1.default.createElement(react_1.default.Fragment, null, ampEnabled && react_1.default.createElement("link", {
+        rel: "amphtml",
+        href: "".concat(page, "?amp=1")
+      }), page !== '/_error' && react_1.default.createElement("link", {
         rel: 'preload',
-        href: "".concat(assetPrefix, "/_next/static/").concat(buildId, "/pages").concat(pagePathname).concat(_devOnlyInvalidateCacheQueryString),
+        href: "".concat(assetPrefix, "/_next/static/").concat(buildId, "/pages").concat(getPagePathname(page)).concat(_devOnlyInvalidateCacheQueryString),
         as: 'script',
         nonce: this.props.nonce,
         crossOrigin: this.props.crossOrigin || undefined
@@ -992,7 +1071,7 @@ function (_react_1$Component2) {
         as: 'script',
         nonce: this.props.nonce,
         crossOrigin: this.props.crossOrigin || undefined
-      }), this.getPreloadDynamicChunks(), this.getPreloadMainLinks(), this.getCssLinks(), styles || null);
+      }), this.getPreloadDynamicChunks(), this.getPreloadMainLinks(), this.getCssLinks(), styles || null));
     }
   }]);
   return Head;
@@ -1010,8 +1089,8 @@ exports.Head = Head;
 
 var Main =
 /*#__PURE__*/
-function (_react_1$Component3) {
-  (0, _inherits2.default)(Main, _react_1$Component3);
+function (_react_1$Component4) {
+  (0, _inherits2.default)(Main, _react_1$Component4);
 
   function Main() {
     (0, _classCallCheck2.default)(this, Main);
@@ -1041,8 +1120,8 @@ exports.Main = Main;
 
 var NextScript =
 /*#__PURE__*/
-function (_react_1$Component4) {
-  (0, _inherits2.default)(NextScript, _react_1$Component4);
+function (_react_1$Component5) {
+  (0, _inherits2.default)(NextScript, _react_1$Component5);
 
   function NextScript() {
     (0, _classCallCheck2.default)(this, NextScript);
@@ -1105,18 +1184,23 @@ function (_react_1$Component4) {
       var _this$context$_docume7 = this.context._documentProps,
           staticMarkup = _this$context$_docume7.staticMarkup,
           assetPrefix = _this$context$_docume7.assetPrefix,
+          amphtml = _this$context$_docume7.amphtml,
           devFiles = _this$context$_docume7.devFiles,
           __NEXT_DATA__ = _this$context$_docume7.__NEXT_DATA__;
       var _devOnlyInvalidateCacheQueryString = this.context._devOnlyInvalidateCacheQueryString;
+
+      if (amphtml) {
+        return null;
+      }
+
       var page = __NEXT_DATA__.page,
           buildId = __NEXT_DATA__.buildId;
-      var pagePathname = getPagePathname(page);
 
       if (true) {
         if (this.props.crossOrigin) console.warn('Warning: `NextScript` attribute `crossOrigin` is deprecated. https://err.sh/next.js/doc-crossorigin-deprecated');
       }
 
-      return react_1.default.createElement(Fragment, null, devFiles ? devFiles.map(function (file) {
+      return react_1.default.createElement(react_1.default.Fragment, null, devFiles ? devFiles.map(function (file) {
         return react_1.default.createElement("script", {
           key: file,
           src: "".concat(assetPrefix, "/_next/").concat(file).concat(_devOnlyInvalidateCacheQueryString),
@@ -1134,7 +1218,7 @@ function (_react_1$Component4) {
       }), page !== '/_error' && react_1.default.createElement("script", {
         async: true,
         id: "__NEXT_PAGE__".concat(page),
-        src: "".concat(assetPrefix, "/_next/static/").concat(buildId, "/pages").concat(pagePathname).concat(_devOnlyInvalidateCacheQueryString),
+        src: "".concat(assetPrefix, "/_next/static/").concat(buildId, "/pages").concat(getPagePathname(page)).concat(_devOnlyInvalidateCacheQueryString),
         nonce: this.props.nonce,
         crossOrigin: this.props.crossOrigin || undefined
       }), react_1.default.createElement("script", {
@@ -2044,8 +2128,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_native_web__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-native-web */ "react-native-web");
+/* harmony import */ var react_native_web__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_native_web__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -2054,6 +2140,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "C:\\Users\\Magnus\\Documents\\webstuff\\Roommatey\\Roommatey\\pages\\_document.js";
+
 
 
 
@@ -2075,13 +2162,13 @@ function (_Document) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("html", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 24
         },
         __self: this
       }, this.props.styleTags, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("link", {
@@ -2089,7 +2176,7 @@ function (_Document) {
         href: "https://use.typekit.net/xhq3ibe.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 26
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("body", {
@@ -2098,19 +2185,19 @@ function (_Document) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 29
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_8__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 30
         },
         __self: this
       })));
@@ -2119,15 +2206,22 @@ function (_Document) {
     key: "getInitialProps",
     value: function getInitialProps(_ref) {
       var renderPage = _ref.renderPage;
-      // Step 1: Create an instance of ServerStyleSheet
-      var sheet = new styled_components__WEBPACK_IMPORTED_MODULE_9__["ServerStyleSheet"](); // Step 2: Retrieve styles from components in the page
+      react_native_web__WEBPACK_IMPORTED_MODULE_9__["AppRegistry"].registerComponent("Main", function () {
+        return next_document__WEBPACK_IMPORTED_MODULE_8__["Main"];
+      });
+
+      var _AppRegistry$getAppli = react_native_web__WEBPACK_IMPORTED_MODULE_9__["AppRegistry"].getApplication("Main"),
+          getStyleElement = _AppRegistry$getAppli.getStyleElement; // Step 1: Create an instance of ServerStyleSheet
+
+
+      var sheet = new styled_components__WEBPACK_IMPORTED_MODULE_10__["ServerStyleSheet"](); // Step 2: Retrieve styles from components in the page
 
       var page = renderPage(function (App) {
         return function (props) {
           return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 10
+              lineNumber: 13
             },
             __self: this
           })));
@@ -2312,6 +2406,17 @@ module.exports = require("prop-types");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-native-web":
+/*!***********************************!*\
+  !*** external "react-native-web" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-native-web");
 
 /***/ }),
 
